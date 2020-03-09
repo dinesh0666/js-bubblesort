@@ -5,6 +5,7 @@ import './style.css';
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
+//problem one arrange like [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
 var a = [1,0,0,0,1,1,0,1,0,1,0,1];
 
 function bubbleSort(a) {
