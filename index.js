@@ -24,3 +24,19 @@ function bubbleSort(a) {
 
 bubbleSort(a);
 console.log(a);
+
+var arr = [2, 3, 1, 3, 4, 5, 3, 1];
+
+function getOccurrence(array, value) {
+    var count = 0;
+    array.forEach((v) => (v === value && count++));
+    return count;
+}
+
+console.log(getOccurrence(arr,5));
+
+
+var uniqueCount = ["a","b","c","d","d","e","a","b","c","f","g","h","h","h","e","a"];
+var count = {};
+uniqueCount.forEach(function(i) { count[i] = (count[i]||0) + 1;});
+console.log(count);
